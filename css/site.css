@@ -552,3 +552,34 @@ footer .fcol a:hover{color:var(--lavender);}
 /* SKYLINE ART */
 .skyline-wrap{position:relative;z-index:1;margin-top:48px;line-height:0;}
 .skyline-wrap svg{width:100%;height:auto;display:block;}
+
+/* ===== Pipeline-page additions ===== */
+
+/* PROPORTIONAL FUNNEL BARS */
+.funnel-bars{display:flex;flex-direction:column;gap:14px;margin-top:24px;}
+.fbar-row{display:flex;align-items:center;gap:16px;}
+.fbar-row .fnum{font-family:'Fraunces',serif;font-weight:600;font-size:1.15rem;color:var(--paper);width:76px;flex-shrink:0;text-align:right;font-variant-numeric:tabular-nums;}
+.fbar-track{flex:1;height:30px;border-radius:8px;background:rgba(249,241,245,0.06);overflow:hidden;position:relative;}
+.fbar-fill{height:100%;border-radius:8px;background-image:var(--sunset);background-size:220% 220%;display:flex;align-items:center;padding-left:12px;}
+.fbar-fill span{font-family:'IBM Plex Mono',monospace;font-size:0.76rem;color:#fff;font-weight:600;white-space:nowrap;}
+@media (max-width:560px){ .fbar-row{flex-wrap:wrap;} .fbar-row .fnum{width:100%;text-align:left;} }
+
+/* EXAMPLE PIPELINE PANEL */
+.example-panel{
+  border-radius:22px;border:1px solid rgba(255,202,6,0.3);
+  background:linear-gradient(165deg, rgba(201,28,122,0.14), rgba(63,25,77,0.5));
+  padding:36px;margin-top:12px;
+}
+.example-list{display:flex;flex-direction:column;gap:0;}
+.example-row{display:flex;gap:18px;padding:16px 0;border-bottom:1px solid rgba(249,241,245,0.1);}
+.example-row:last-child{border-bottom:none;}
+.example-row .en{font-family:'IBM Plex Mono',monospace;color:var(--lime);font-weight:600;width:28px;flex-shrink:0;}
+.example-row .et{font-weight:700;width:170px;flex-shrink:0;}
+.example-row .ed{color:var(--paper-dim);font-size:0.94rem;}
+@media (max-width:640px){ .example-row{flex-wrap:wrap;} .example-row .et{width:100%;} }
+
+/* NOT-A / IS-A CLOSING STATEMENT */
+.not-a-list{display:flex;flex-direction:column;gap:8px;margin-top:20px;}
+.not-a-list div{color:var(--paper-dim);font-size:1rem;}
+.not-a-list div::before{content:"✕ ";color:rgba(249,241,245,0.35);}
+.is-a{margin-top:16px;font-family:'Fraunces',serif;font-style:italic;font-size:1.5rem;color:var(--paper);max-width:26ch;}
