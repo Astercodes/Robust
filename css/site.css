@@ -177,7 +177,7 @@ header.nav{
 .wordmark{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:1.05rem;letter-spacing:0.04em;color:var(--paper);text-decoration:none;display:flex;align-items:center;gap:8px;}
 .wordmark .dot{width:8px;height:8px;border-radius:50%;background:var(--lime);box-shadow:0 0 10px var(--lime);animation:dotPulse 2.2s ease-in-out infinite;}
 @keyframes dotPulse{0%,100%{box-shadow:0 0 6px var(--lime);}50%{box-shadow:0 0 16px 3px var(--lime);}}
-nav.links{display:flex;gap:28px;list-style:none;margin:0;padding:0;font-size:0.88rem;}
+nav.links{display:flex;gap:20px;list-style:none;margin:0;padding:0;font-size:0.86rem;}
 nav.links a{text-decoration:none;color:var(--paper-dim);transition:color .2s;position:relative;font-weight:500;}
 nav.links a:hover,nav.links a:focus-visible{color:var(--paper);}
 nav.links a.is-active{color:var(--paper);}
