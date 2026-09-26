@@ -174,9 +174,13 @@ header.nav{
 .product-switch a:hover{color:var(--paper);}
 .product-switch a.is-active{background:var(--lime);color:#241902;}
 @media (max-width:480px){ .product-switch a{padding:5px 10px;font-size:0.72rem;} }
-.wordmark{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:1.05rem;letter-spacing:0.04em;color:var(--paper);text-decoration:none;display:flex;align-items:center;gap:8px;}
-.wordmark .dot{width:8px;height:8px;border-radius:50%;background:var(--lime);box-shadow:0 0 10px var(--lime);animation:dotPulse 2.2s ease-in-out infinite;}
-@keyframes dotPulse{0%,100%{box-shadow:0 0 6px var(--lime);}50%{box-shadow:0 0 16px 3px var(--lime);}}
+.wordmark{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:1.05rem;letter-spacing:0.04em;color:var(--paper);text-decoration:none;display:flex;align-items:center;gap:9px;}
+.wordmark .logo-mark{width:22px;height:22px;flex-shrink:0;}
+.logo-mark .lm-b1{fill:var(--fuchsia-strong);}
+.logo-mark .lm-b2{fill:var(--lavender-soft);}
+.logo-mark .lm-b3{fill:var(--lime-deep);}
+.logo-mark .lm-sun{fill:var(--lime);animation:sunGlow 2.2s ease-in-out infinite;}
+@keyframes sunGlow{0%,100%{filter:drop-shadow(0 0 2px var(--lime));}50%{filter:drop-shadow(0 0 6px var(--lime));}}
 nav.links{display:flex;gap:20px;list-style:none;margin:0;padding:0;font-size:0.86rem;}
 nav.links a{text-decoration:none;color:var(--paper-dim);transition:color .2s;position:relative;font-weight:500;}
 nav.links a:hover,nav.links a:focus-visible{color:var(--paper);}
@@ -668,7 +672,7 @@ footer .fcol a:hover{color:var(--lavender);}
 .not-a-list div::before{content:"✕ ";color:rgba(249,241,245,0.35);}
 .is-a{margin-top:16px;font-family:'Bricolage Grotesque',sans-serif;font-style:normal;font-weight:700;font-size:1.5rem;color:var(--paper);max-width:26ch;}
 
-/* ===== By-role interactive selector (institutions-by-role.html) ===== */
+/* ===== By-role interactive selector (byrole.html) ===== */
 
 .role-selector{
   position:sticky;top:calc(65px + env(safe-area-inset-top,0px));z-index:40;
